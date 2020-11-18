@@ -176,7 +176,7 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
 	display: inline-block;
 	position: relative;
 	padding: 4%;
-	height: 100vh;
+	/* height: 100vh; */
 }
 .about img {
     padding: 0.1em;
