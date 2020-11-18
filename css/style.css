@@ -869,7 +869,7 @@ ul.address li {
     display: block;
 }
 ul.address li ul.agileits-address-text li {
-    display: inline-block;
+    display: block;
     font-size: 1.2em;
     color: #000;
     margin-top: 1em;
