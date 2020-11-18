@@ -173,6 +173,7 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
 }
 /*-- about --*/
 .about{
+	display: inline-block;
 	position: relative;
 	padding: 4%;
 	height: 100vh;
