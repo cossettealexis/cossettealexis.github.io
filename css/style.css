@@ -1503,6 +1503,8 @@ ul.address li ul.agileits-address-text li a:hover{
 
 .portfolio {
 	margin-top: 10%;
+	/* height: 100vh; */
+	display: inline-block;
 }
 
 figure {
@@ -1518,9 +1520,12 @@ figure {
 }
 /* //Portfolio */
 
+
 /* Education */
 
-
+#edu {
+	display: block;
+}
 
 /* //Education */
 
