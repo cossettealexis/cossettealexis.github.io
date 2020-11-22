@@ -177,7 +177,7 @@ nav.navbar.navbar-default.navbar-fixed-top.top-nav-collapse {
 	position: relative;
 	padding: 4%;
 	margin-bottom: 20%;
-	/* height: 100vh; */
+	height: 100vh;
 }
 .about img {
     padding: 0.1em;
@@ -213,6 +213,7 @@ h4.modal-title {
     line-height: .9em;
 }
 .about-text{
+	margin-top: 8%;
     width: 100%;
     top: 0;
     padding: 4em 0;
@@ -231,7 +232,7 @@ h3.page-heading {
     font-weight: bold;
     letter-spacing: 5px;
     border:1px solid #ce7501;
-    width: 15%;
+    width: 22%;
     margin: 0 auto;
     padding: 0.4em;
 }
@@ -561,6 +562,11 @@ select {
 }
 .sortandshuffle .sort-btn.active {
     background-color: #9d0000;
+}
+
+.thickbox {
+	height: 100px;
+	width: 100px;
 }
 
 /*----*/
@@ -1466,6 +1472,7 @@ ul.address li ul.agileits-address-text li a:hover{
 .skills {
 	display: block;
 	height: 120vh;
+	margin-top: 0;
 	padding-top: 5%;
 }
 
