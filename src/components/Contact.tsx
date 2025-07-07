@@ -109,46 +109,46 @@ export function Contact() {
           initial="hidden"
           animate={inView ? 'visible' : 'hidden'}
         >
-          <motion.div variants={itemVariants} className="text-center mb-20">
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8">
+          <motion.div variants={itemVariants} className="text-center mb-12">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
               Get In <span className="text-gradient">Touch</span>
             </h2>
-            <p className="text-2xl md:text-3xl lg:text-4xl text-secondary-600 dark:text-secondary-400 max-w-4xl mx-auto">
+            <p className="text-base md:text-lg lg:text-xl text-secondary-600 dark:text-secondary-400 max-w-4xl mx-auto">
               Have a project in mind or want to collaborate? I'd love to hear from you. Let's create something amazing together.
             </p>
           </motion.div>
 
-          <div className="grid lg:grid-cols-2 gap-16">
+          <div className="grid lg:grid-cols-2 gap-8">
             {/* Contact Information */}
-            <motion.div variants={itemVariants} className="space-y-12">
+            <motion.div variants={itemVariants} className="space-y-8">
               <div>
-                <h3 className="text-3xl md:text-4xl font-semibold mb-8 text-secondary-800 dark:text-secondary-200">
+                <h3 className="text-xl md:text-2xl font-semibold mb-4 text-secondary-800 dark:text-secondary-200">
                   Let's Talk
                 </h3>
-                <p className="text-xl md:text-2xl text-secondary-600 dark:text-secondary-400 mb-12 leading-relaxed">
+                <p className="text-base md:text-lg text-secondary-600 dark:text-secondary-400 mb-6 leading-relaxed">
                   I'm always open to discussing new opportunities, creative projects, or just having a friendly chat about technology and development.
                 </p>
               </div>
 
-              <div className="space-y-8">
+              <div className="space-y-6">
                 {contactInfo.map((info, index) => (
                   <motion.div
                     key={info.title}
                     variants={itemVariants}
-                    className="flex items-center gap-6 p-6 card hover:shadow-lg transition-shadow duration-300"
+                    className="flex items-center gap-4 p-4 card hover:shadow-lg transition-shadow duration-300"
                   >
                     <div className="flex-shrink-0">
-                      <div className="w-16 h-16 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center">
-                        <info.icon className="h-8 w-8 text-primary-600 dark:text-primary-400" />
+                      <div className="w-12 h-12 bg-primary-100 dark:bg-primary-900 rounded-lg flex items-center justify-center">
+                        <info.icon className="h-6 w-6 text-primary-600 dark:text-primary-400" />
                       </div>
                     </div>
                     <div>
-                      <h4 className="font-medium text-xl md:text-2xl text-secondary-800 dark:text-secondary-200 mb-2">
+                      <h4 className="font-medium text-base md:text-lg text-secondary-800 dark:text-secondary-200 mb-1">
                         {info.title}
                       </h4>
                       <a
                         href={info.href}
-                        className="text-lg md:text-xl text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200"
+                        className="text-sm md:text-base text-secondary-600 dark:text-secondary-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200"
                       >
                         {info.value}
                       </a>
@@ -160,10 +160,10 @@ export function Contact() {
 
             {/* Contact Form */}
             <motion.div variants={itemVariants}>
-              <form onSubmit={handleSubmit} className="space-y-8">
-                <div className="grid md:grid-cols-2 gap-8">
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-lg md:text-xl font-medium text-secondary-700 dark:text-secondary-300 mb-3">
+                    <label htmlFor="name" className="block text-sm md:text-base font-medium text-secondary-700 dark:text-secondary-300 mb-2">
                       Name
                     </label>
                     <input
@@ -173,12 +173,12 @@ export function Contact() {
                       value={formData.name}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-6 py-4 border border-secondary-300 dark:border-secondary-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent bg-white dark:bg-secondary-800 text-secondary-900 dark:text-secondary-100 transition-colors duration-200 text-lg"
+                      className="w-full px-4 py-3 border border-secondary-300 dark:border-secondary-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent bg-white dark:bg-secondary-800 text-secondary-900 dark:text-secondary-100 transition-colors duration-200 text-base"
                       placeholder="Your Name"
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-lg md:text-xl font-medium text-secondary-700 dark:text-secondary-300 mb-3">
+                    <label htmlFor="email" className="block text-sm md:text-base font-medium text-secondary-700 dark:text-secondary-300 mb-2">
                       Email
                     </label>
                     <input
@@ -188,14 +188,14 @@ export function Contact() {
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-6 py-4 border border-secondary-300 dark:border-secondary-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent bg-white dark:bg-secondary-800 text-secondary-900 dark:text-secondary-100 transition-colors duration-200 text-lg"
+                      className="w-full px-4 py-3 border border-secondary-300 dark:border-secondary-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent bg-white dark:bg-secondary-800 text-secondary-900 dark:text-secondary-100 transition-colors duration-200 text-base"
                       placeholder="your@email.com"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label htmlFor="subject" className="block text-lg md:text-xl font-medium text-secondary-700 dark:text-secondary-300 mb-3">
+                  <label htmlFor="subject" className="block text-sm md:text-base font-medium text-secondary-700 dark:text-secondary-300 mb-2">
                     Subject
                   </label>
                   <input
@@ -205,13 +205,13 @@ export function Contact() {
                     value={formData.subject}
                     onChange={handleInputChange}
                     required
-                    className="w-full px-6 py-4 border border-secondary-300 dark:border-secondary-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent bg-white dark:bg-secondary-800 text-secondary-900 dark:text-secondary-100 transition-colors duration-200 text-lg"
+                    className="w-full px-4 py-3 border border-secondary-300 dark:border-secondary-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent bg-white dark:bg-secondary-800 text-secondary-900 dark:text-secondary-100 transition-colors duration-200 text-base"
                     placeholder="What's this about?"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-lg md:text-xl font-medium text-secondary-700 dark:text-secondary-300 mb-3">
+                  <label htmlFor="message" className="block text-sm md:text-base font-medium text-secondary-700 dark:text-secondary-300 mb-2">
                     Message
                   </label>
                   <textarea
@@ -221,7 +221,7 @@ export function Contact() {
                     onChange={handleInputChange}
                     required
                     rows={6}
-                    className="w-full px-6 py-4 border border-secondary-300 dark:border-secondary-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent bg-white dark:bg-secondary-800 text-secondary-900 dark:text-secondary-100 transition-colors duration-200 resize-none text-lg"
+                    className="w-full px-4 py-3 border border-secondary-300 dark:border-secondary-600 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent bg-white dark:bg-secondary-800 text-secondary-900 dark:text-secondary-100 transition-colors duration-200 resize-none text-base"
                     placeholder="Tell me about your project or just say hello!"
                   />
                 </div>

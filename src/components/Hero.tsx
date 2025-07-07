@@ -35,8 +35,8 @@ export function Hero() {
           initial="hidden"
           animate="visible"
         >
-          <motion.div variants={itemVariants} className="mb-12">
-            <div className="relative w-40 h-40 md:w-48 md:h-48 mx-auto mb-8">
+          <motion.div variants={itemVariants} className="mb-8">
+            <div className="relative w-32 h-32 md:w-40 md:h-40 mx-auto mb-6">
               <Image
                 src="/profile-picture.svg"
                 alt="Cossette Alexis Gabuya"
@@ -49,7 +49,7 @@ export function Hero() {
 
           <motion.h1
             variants={itemVariants}
-            className="text-6xl md:text-8xl lg:text-9xl font-bold mb-8"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6"
           >
             Hi, I'm{' '}
             <span className="text-gradient">
@@ -59,49 +59,49 @@ export function Hero() {
 
           <motion.p
             variants={itemVariants}
-            className="text-3xl md:text-4xl lg:text-5xl text-secondary-600 dark:text-secondary-400 mb-10 max-w-4xl mx-auto"
+            className="text-lg md:text-xl lg:text-2xl text-secondary-600 dark:text-secondary-400 mb-6 max-w-4xl mx-auto"
           >
             Software Developer & Python Specialist
           </motion.p>
 
           <motion.p
             variants={itemVariants}
-            className="text-xl md:text-2xl lg:text-3xl text-secondary-700 dark:text-secondary-300 mb-16 max-w-4xl mx-auto leading-relaxed"
+            className="text-base md:text-lg lg:text-xl text-secondary-700 dark:text-secondary-300 mb-12 max-w-4xl mx-auto leading-relaxed"
           >
             Certified Associate in Python Programming with expertise in Django, Django REST Framework, and building scalable web applications. Specialized in backend development, API design, and system integration.
           </motion.p>
 
           <motion.div
             variants={itemVariants}
-            className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16"
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8"
           >
-            <button className="btn-primary flex items-center gap-3 text-xl px-10 py-5">
-              <Download className="h-6 w-6" />
+            <button className="btn-primary flex items-center gap-2 text-base px-6 py-3">
+              <Download className="h-5 w-5" />
               Download Resume
             </button>
             
-            <div className="flex gap-6">
+            <div className="flex gap-4">
               <a
                 href="https://github.com/cossettealexis"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-4 rounded-full bg-secondary-100 dark:bg-secondary-800 hover:bg-secondary-200 dark:hover:bg-secondary-700 transition-colors duration-200"
+                className="p-2 rounded-full bg-secondary-100 dark:bg-secondary-800 hover:bg-secondary-200 dark:hover:bg-secondary-700 transition-colors duration-200"
               >
-                <Github className="h-8 w-8" />
+                <Github className="h-5 w-5" />
               </a>
               <a
                 href="https://linkedin.com/in/cossette-alexis-gabuya"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-4 rounded-full bg-secondary-100 dark:bg-secondary-800 hover:bg-secondary-200 dark:hover:bg-secondary-700 transition-colors duration-200"
+                className="p-2 rounded-full bg-secondary-100 dark:bg-secondary-800 hover:bg-secondary-200 dark:hover:bg-secondary-700 transition-colors duration-200"
               >
-                <Linkedin className="h-8 w-8" />
+                <Linkedin className="h-5 w-5" />
               </a>
               <a
                 href="mailto:gabuyacossettealexis@gmail.com"
-                className="p-4 rounded-full bg-secondary-100 dark:bg-secondary-800 hover:bg-secondary-200 dark:hover:bg-secondary-700 transition-colors duration-200"
+                className="p-2 rounded-full bg-secondary-100 dark:bg-secondary-800 hover:bg-secondary-200 dark:hover:bg-secondary-700 transition-colors duration-200"
               >
-                <Mail className="h-8 w-8" />
+                <Mail className="h-5 w-5" />
               </a>
             </div>
           </motion.div>
@@ -110,7 +110,7 @@ export function Hero() {
             variants={itemVariants}
             className="animate-bounce"
           >
-            <ArrowDown className="h-10 w-10 mx-auto text-primary-600 dark:text-primary-400" />
+            <ArrowDown className="h-8 w-8 mx-auto text-primary-600 dark:text-primary-400" />
           </motion.div>
         </motion.div>
       </div>

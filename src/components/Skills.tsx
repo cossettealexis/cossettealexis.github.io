@@ -84,37 +84,37 @@ export function Skills() {
           initial="hidden"
           animate={inView ? 'visible' : 'hidden'}
         >
-          <motion.div variants={itemVariants} className="text-center mb-20">
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8">
+          <motion.div variants={itemVariants} className="text-center mb-12">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
               My <span className="text-gradient">Skills</span>
             </h2>
-            <p className="text-2xl md:text-3xl lg:text-4xl text-secondary-600 dark:text-secondary-400 max-w-4xl mx-auto">
+            <p className="text-base md:text-lg lg:text-xl text-secondary-600 dark:text-secondary-400 max-w-4xl mx-auto">
               Here are the technologies and tools I work with to bring ideas to life.
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {skillCategories.map((category, categoryIndex) => (
               <motion.div
                 key={category.title}
                 variants={itemVariants}
-                className="card p-8"
+                className="card p-6"
               >
-                <h3 className="text-2xl md:text-3xl font-semibold mb-8 text-secondary-800 dark:text-secondary-200">
+                <h3 className="text-lg md:text-xl font-semibold mb-6 text-secondary-800 dark:text-secondary-200">
                   {category.title}
                 </h3>
-                <div className="space-y-6">
+                <div className="space-y-4">
                   {category.skills.map((skill, skillIndex) => (
-                    <div key={skill.name} className="space-y-3">
+                    <div key={skill.name} className="space-y-2">
                       <div className="flex justify-between items-center">
-                        <span className="text-xl md:text-2xl text-secondary-700 dark:text-secondary-300">
+                        <span className="text-sm md:text-base text-secondary-700 dark:text-secondary-300">
                           {skill.name}
                         </span>
-                        <span className="text-lg md:text-xl text-secondary-600 dark:text-secondary-400">
+                        <span className="text-sm md:text-base text-secondary-600 dark:text-secondary-400">
                           {skill.level}%
                         </span>
                       </div>
-                      <div className="h-3 bg-secondary-200 dark:bg-secondary-700 rounded-full overflow-hidden">
+                      <div className="h-2 bg-secondary-200 dark:bg-secondary-700 rounded-full overflow-hidden">
                         <motion.div
                           className="h-full bg-gradient-to-r from-primary-500 to-primary-600 rounded-full"
                           initial={{ width: 0 }}
