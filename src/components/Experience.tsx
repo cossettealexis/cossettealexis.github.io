@@ -242,16 +242,16 @@ export function Experience() {
           initial="hidden"
           animate={inView ? 'visible' : 'hidden'}
         >
-          <motion.div variants={itemVariants} className="text-center mb-20">
-            <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8">
+          <motion.div variants={itemVariants} className="text-center mb-12">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
               Professional <span className="text-gradient">Experience</span>
             </h2>
-            <p className="text-2xl md:text-3xl lg:text-4xl text-secondary-600 dark:text-secondary-400 max-w-4xl mx-auto">
+            <p className="text-base md:text-lg lg:text-xl text-secondary-600 dark:text-secondary-400 max-w-4xl mx-auto">
               My journey through different companies and the impactful projects I've delivered
             </p>
           </motion.div>
 
-          <div className="space-y-16">
+          <div className="space-y-12">
             {experiences.map((experience, index) => (
               <motion.div
                 key={experience.id}
@@ -267,24 +267,24 @@ export function Experience() {
                 <div className="absolute left-6 top-8 w-4 h-4 bg-primary-500 rounded-full border-4 border-white dark:border-secondary-900 shadow-lg"></div>
 
                 <div className="ml-20">
-                  <div className="card p-10 hover:shadow-2xl transition-shadow duration-300">
+                  <div className="card p-8 hover:shadow-2xl transition-shadow duration-300">
                     {/* Company Header */}
-                    <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start mb-8">
+                    <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start mb-6">
                       <div className="flex-1">
-                        <div className="flex items-center gap-3 mb-4">
-                          <Building className="h-6 w-6 text-primary-600 dark:text-primary-400" />
-                          <h3 className="text-3xl md:text-4xl font-bold text-secondary-800 dark:text-secondary-200">
+                        <div className="flex items-center gap-3 mb-3">
+                          <Building className="h-5 w-5 text-primary-600 dark:text-primary-400" />
+                          <h3 className="text-xl md:text-2xl font-bold text-secondary-800 dark:text-secondary-200">
                             {experience.company}
                           </h3>
                         </div>
                         
-                        <h4 className="text-2xl md:text-3xl font-semibold text-primary-600 dark:text-primary-400 mb-4">
+                        <h4 className="text-lg md:text-xl font-semibold text-primary-600 dark:text-primary-400 mb-3">
                           {experience.position}
                         </h4>
                         
-                        <div className="flex flex-wrap items-center gap-6 text-lg md:text-xl text-secondary-600 dark:text-secondary-400 mb-6">
+                        <div className="flex flex-wrap items-center gap-4 text-sm md:text-base text-secondary-600 dark:text-secondary-400 mb-4">
                           <div className="flex items-center gap-2">
-                            <MapPin className="h-5 w-5" />
+                            <MapPin className="h-4 w-4" />
                             <span>{experience.location}</span>
                           </div>
                           <div className="flex items-center gap-2">
@@ -310,14 +310,14 @@ export function Experience() {
                     </p>
 
                     {/* Responsibilities */}
-                    <div className="mb-10">
-                      <h5 className="text-2xl md:text-3xl font-semibold text-secondary-800 dark:text-secondary-200 mb-6 flex items-center gap-3">
-                        <Users className="h-6 w-6 text-primary-600 dark:text-primary-400" />
+                    <div className="mb-8">
+                      <h5 className="text-lg md:text-xl font-semibold text-secondary-800 dark:text-secondary-200 mb-4 flex items-center gap-3">
+                        <Users className="h-5 w-5 text-primary-600 dark:text-primary-400" />
                         Key Responsibilities
                       </h5>
-                      <ul className="grid md:grid-cols-2 gap-4">
+                      <ul className="grid md:grid-cols-2 gap-3">
                         {experience.responsibilities.map((responsibility, idx) => (
-                          <li key={idx} className="flex items-start gap-3 text-lg md:text-xl text-secondary-600 dark:text-secondary-400">
+                          <li key={idx} className="flex items-start gap-3 text-sm md:text-base text-secondary-600 dark:text-secondary-400">
                             <div className="w-2 h-2 bg-primary-500 rounded-full mt-3 flex-shrink-0"></div>
                             <span>{responsibility}</span>
                           </li>
@@ -326,16 +326,16 @@ export function Experience() {
                     </div>
 
                     {/* Projects */}
-                    <div className="mb-10">
-                      <h5 className="text-2xl md:text-3xl font-semibold text-secondary-800 dark:text-secondary-200 mb-8 flex items-center gap-3">
-                        <Code className="h-6 w-6 text-primary-600 dark:text-primary-400" />
+                    <div className="mb-8">
+                      <h5 className="text-lg md:text-xl font-semibold text-secondary-800 dark:text-secondary-200 mb-4 flex items-center gap-3">
+                        <Code className="h-5 w-5 text-primary-600 dark:text-primary-400" />
                         Key Projects
                       </h5>
-                      <div className="grid lg:grid-cols-2 gap-8">
+                      <div className="grid lg:grid-cols-2 gap-6">
                         {experience.projects.map((project, idx) => (
-                          <div key={idx} className="bg-secondary-50 dark:bg-secondary-800 rounded-xl p-8 hover:shadow-lg transition-shadow duration-300">
-                            <div className="flex justify-between items-start mb-4">
-                              <h6 className="text-xl md:text-2xl font-semibold text-secondary-800 dark:text-secondary-200">
+                          <div key={idx} className="bg-secondary-50 dark:bg-secondary-800 rounded-xl p-6 hover:shadow-lg transition-shadow duration-300">
+                            <div className="flex justify-between items-start mb-3">
+                              <h6 className="text-base md:text-lg font-semibold text-secondary-800 dark:text-secondary-200">
                                 {project.name}
                               </h6>
                               {project.links && (
