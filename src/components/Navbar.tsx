@@ -23,6 +23,7 @@ export function Navbar() {
     { name: 'Home', href: '#home' },
     { name: 'About', href: '#about' },
     { name: 'Skills', href: '#skills' },
+    { name: 'Experience', href: '#experience' },
     { name: 'Projects', href: '#projects' },
     { name: 'Blog', href: '/blog' },
     { name: 'Contact', href: '#contact' },
@@ -83,7 +84,7 @@ export function Navbar() {
                 <Linkedin className="h-7 w-7" />
               </a>
               <a
-                href="mailto:cossettealexis@gmail.com"
+                href="mailto:gabuyacossettealexis@gmail.com"
                 className="p-4 rounded-lg bg-secondary-100 dark:bg-secondary-800 hover:bg-secondary-200 dark:hover:bg-secondary-700 transition-colors duration-200"
               >
                 <Mail className="h-7 w-7" />

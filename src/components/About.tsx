@@ -34,23 +34,23 @@ export function About() {
   const features = [
     {
       icon: Code,
-      title: 'Full Stack Development',
-      description: 'Experienced in both frontend and backend technologies, creating complete web solutions.',
+      title: 'Backend Development',
+      description: 'Specialized in Django, Python, and Django REST Framework for scalable backend systems.',
     },
     {
       icon: Palette,
-      title: 'UI/UX Design',
-      description: 'Passionate about creating beautiful, intuitive interfaces that users love.',
+      title: 'API Development',
+      description: 'Expert in designing and building RESTful APIs with proper authentication and security.',
     },
     {
       icon: Zap,
-      title: 'Performance Optimization',
-      description: 'Focused on building fast, efficient applications with optimal user experience.',
+      title: 'Database Optimization',
+      description: 'Experienced in PostgreSQL, MySQL, and Oracle with focus on performance optimization.',
     },
     {
       icon: Users,
-      title: 'Team Collaboration',
-      description: 'Strong communication skills and experience working in agile development teams.',
+      title: 'System Integration',
+      description: 'Skilled in integrating third-party services and modernizing legacy systems.',
     },
   ];
 
@@ -68,7 +68,7 @@ export function About() {
               About <span className="text-gradient">Me</span>
             </h2>
             <p className="text-2xl md:text-3xl lg:text-4xl text-secondary-600 dark:text-secondary-400 max-w-4xl mx-auto">
-              I'm a passionate full stack developer who loves creating digital experiences that make a difference.
+              Certified Associate in Python Programming with hands-on experience in developing scalable, secure, and high-performance web applications.
             </p>
           </motion.div>
 
@@ -79,18 +79,19 @@ export function About() {
               </h3>
               <div className="space-y-6 text-xl md:text-2xl text-secondary-700 dark:text-secondary-300 leading-relaxed">
                 <p>
-                  Hello! I'm Cossette Alexis, a dedicated full stack developer with a passion for creating 
-                  innovative web solutions. My journey in tech began with curiosity about how websites work, 
-                  and has evolved into a deep love for building applications that solve real-world problems.
+                  Hello! I'm Cossette Alexis Gabuya, a dedicated Software Developer with a Computer Engineering 
+                  background from the University of Cebu. I'm a Certified Associate in Python Programming with 
+                  hands-on experience in developing scalable, secure, and high-performance web applications and APIs.
                 </p>
                 <p>
-                  I specialize in modern web technologies including React, Django, and cloud services. 
-                  I believe in writing clean, maintainable code and staying up-to-date with the latest 
-                  industry trends and best practices.
+                  I specialize in Django, Python, and Django REST Framework (DRF), with proficiency in designing 
+                  and optimizing backend systems, building RESTful APIs, and integrating third-party services to 
+                  enhance system functionality. I'm also skilled in modern frontend technologies including ReactJS and Angular.
                 </p>
                 <p>
-                  When I'm not coding, you'll find me exploring new technologies, contributing to open-source 
-                  projects, or sharing my knowledge through blog posts and technical articles.
+                  Throughout my career, I've maintained and improved existing codebases while ensuring code quality, 
+                  performance, and scalability. I'm passionate about creating solutions that solve real-world problems 
+                  and have maintained over 90% client satisfaction in my freelance projects.
                 </p>
               </div>
             </motion.div>
@@ -125,7 +126,7 @@ export function About() {
             <div className="grid md:grid-cols-3 gap-12">
               <div className="card p-8">
                 <div className="text-5xl md:text-6xl font-bold text-primary-600 dark:text-primary-400 mb-4">
-                  3+
+                  5+
                 </div>
                 <p className="text-xl md:text-2xl text-secondary-600 dark:text-secondary-400">
                   Years of Experience
@@ -133,7 +134,7 @@ export function About() {
               </div>
               <div className="card p-8">
                 <div className="text-5xl md:text-6xl font-bold text-primary-600 dark:text-primary-400 mb-4">
-                  50+
+                  15+
                 </div>
                 <p className="text-xl md:text-2xl text-secondary-600 dark:text-secondary-400">
                   Projects Completed
@@ -141,10 +142,10 @@ export function About() {
               </div>
               <div className="card p-8">
                 <div className="text-5xl md:text-6xl font-bold text-primary-600 dark:text-primary-400 mb-4">
-                  24/7
+                  90%+
                 </div>
                 <p className="text-xl md:text-2xl text-secondary-600 dark:text-secondary-400">
-                  Learning New Things
+                  Client Satisfaction
                 </p>
               </div>
             </div>

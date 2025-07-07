@@ -83,20 +83,20 @@ export function Contact() {
     {
       icon: Mail,
       title: 'Email',
-      value: 'cossettealexis@gmail.com',
-      href: 'mailto:cossettealexis@gmail.com',
+      value: 'gabuyacossettealexis@gmail.com',
+      href: 'mailto:gabuyacossettealexis@gmail.com',
     },
     {
       icon: Phone,
       title: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567',
+      value: '+63 922 609 1707',
+      href: 'tel:+639226091707',
     },
     {
       icon: MapPin,
       title: 'Location',
-      value: 'San Francisco, CA',
-      href: 'https://maps.google.com/?q=San+Francisco,+CA',
+      value: 'Tisa, Cebu City',
+      href: 'https://maps.google.com/?q=Tisa,+Cebu+City',
     },
   ];
 

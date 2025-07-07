@@ -61,14 +61,14 @@ export function Hero() {
             variants={itemVariants}
             className="text-3xl md:text-4xl lg:text-5xl text-secondary-600 dark:text-secondary-400 mb-10 max-w-4xl mx-auto"
           >
-            Full Stack Developer & Tech Enthusiast
+            Software Developer & Python Specialist
           </motion.p>
 
           <motion.p
             variants={itemVariants}
             className="text-xl md:text-2xl lg:text-3xl text-secondary-700 dark:text-secondary-300 mb-16 max-w-4xl mx-auto leading-relaxed"
           >
-            I create beautiful, functional, and user-friendly web applications using modern technologies like React, Django, and more. Passionate about clean code, innovative solutions, and continuous learning.
+            Certified Associate in Python Programming with expertise in Django, Django REST Framework, and building scalable web applications. Specialized in backend development, API design, and system integration.
           </motion.p>
 
           <motion.div
@@ -98,7 +98,7 @@ export function Hero() {
                 <Linkedin className="h-8 w-8" />
               </a>
               <a
-                href="mailto:cossettealexis@gmail.com"
+                href="mailto:gabuyacossettealexis@gmail.com"
                 className="p-4 rounded-full bg-secondary-100 dark:bg-secondary-800 hover:bg-secondary-200 dark:hover:bg-secondary-700 transition-colors duration-200"
               >
                 <Mail className="h-8 w-8" />

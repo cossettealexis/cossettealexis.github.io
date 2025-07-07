@@ -11,36 +11,45 @@ export function Skills() {
 
   const skillCategories = [
     {
-      title: 'Frontend Development',
+      title: 'Programming Languages',
       skills: [
-        { name: 'React', level: 90 },
-        { name: 'Next.js', level: 85 },
+        { name: 'Python', level: 95 },
+        { name: 'JavaScript', level: 85 },
         { name: 'TypeScript', level: 80 },
-        { name: 'Tailwind CSS', level: 95 },
-        { name: 'JavaScript', level: 90 },
-        { name: 'HTML/CSS', level: 95 },
+        { name: 'HTML/CSS', level: 90 },
+        { name: 'PHP', level: 75 },
       ],
     },
     {
-      title: 'Backend Development',
+      title: 'Frameworks & Libraries',
       skills: [
-        { name: 'Django', level: 85 },
-        { name: 'Python', level: 80 },
-        { name: 'Node.js', level: 75 },
-        { name: 'PostgreSQL', level: 80 },
-        { name: 'REST APIs', level: 85 },
-        { name: 'GraphQL', level: 70 },
+        { name: 'Django', level: 95 },
+        { name: 'Django REST Framework', level: 95 },
+        { name: 'ReactJS', level: 85 },
+        { name: 'Angular', level: 80 },
+        { name: 'VueJS', level: 75 },
+        { name: 'Tailwind CSS', level: 85 },
+      ],
+    },
+    {
+      title: 'Databases & Cloud',
+      skills: [
+        { name: 'PostgreSQL', level: 90 },
+        { name: 'MySQL', level: 85 },
+        { name: 'Oracle', level: 80 },
+        { name: 'AWS', level: 85 },
+        { name: 'Azure AI Search', level: 80 },
       ],
     },
     {
       title: 'Tools & Technologies',
       skills: [
         { name: 'Git', level: 90 },
-        { name: 'Docker', level: 75 },
-        { name: 'AWS', level: 70 },
-        { name: 'Vercel', level: 85 },
-        { name: 'Figma', level: 80 },
-        { name: 'VS Code', level: 95 },
+        { name: 'Mercurial', level: 75 },
+        { name: 'REST API Development', level: 95 },
+        { name: 'JWT Authentication', level: 90 },
+        { name: 'Docker', level: 80 },
+        { name: 'System Integration', level: 85 },
       ],
     },
   ];
@@ -84,7 +93,7 @@ export function Skills() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-12">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
             {skillCategories.map((category, categoryIndex) => (
               <motion.div
                 key={category.title}
